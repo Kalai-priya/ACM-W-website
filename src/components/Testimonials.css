@@ -1,0 +1,231 @@
+/* Testimonials Container */
+.testimonials-container {
+  background-color: #121212; /* Black background */
+  color: #fff; /* White text */
+  padding: 50px 50px;
+  text-align: center;
+  border-radius: 0px;
+  position: relative;
+}
+
+/* Section Title */
+.testimonials-container h2 {
+  font-size: 2.5rem;
+  color: #e3e3e3;
+  margin-top: -20px;
+  margin-bottom: 60px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Testimonials Slider */
+.testimonials-slider {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  justify-content: center; /* Center the initial card */
+  align-items: center;
+  padding: 50px;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+  background: linear-gradient(135deg, #0a032d, #4e59d2); 
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 10px;
+  min-width: 300px;
+  max-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #b2bdbd97;
+  position: relative;
+}
+
+/* Profile Picture Circle */
+.testimonial-card .profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 3px solid #541556;
+  position: absolute;
+  top:-40px; /* Position the profile pic above the card */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Active Testimonial Card */
+.testimonial-card.active {
+  transform: scale(1.00);
+  border: 3px solid #522066; /* Purple border for active testimonial */
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Testimonial Author */
+.testimonial-card .author {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-top: 15px;
+}
+
+/* Role */
+.testimonial-card .role {
+  color: #d6ccea; /* Light purple */
+  font-size: 0.95rem;
+}
+
+/* Slider Controls */
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+/* Dots Navigation */
+.dots {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.dots .dot {
+  width:10px;
+  height: 10px;
+  background-color: #e8e1ea; /* Light purple */
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots .dot.active {
+  background-color: #7c4398; /* Darker purple */
+}
+
+/* Hover effect for dots */
+.dots .dot:hover {
+  background-color: #8e44ad;
+}
+
+/* Responsive Styling */
+@media (max-width: 798px) {
+  .testimonials-container {
+    padding: 30px 10px;
+  }
+
+  .testimonials-slider {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    margin: 10px 0;
+    min-width: 250px;
+    max-width: 200%;
+  }
+
+  .slider-controls button {
+    padding: 100px 100px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Header Row with Filter */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Dropdown Filter */
+.dropdown-filter {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-filter:focus {
+  border-color: #8e44ad; /* Match the theme's purple color */
+  outline: none;
+}
+
+.dropdown-filter:hover {
+  border-color: #7c4398;
+  cursor: pointer;
+}
+
+/* Style for the button below the dots and slider controls */
+.experience-btn {
+  margin-top: 20px; /* Distance from the dots */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 300px; /* Optional: Adjust the max width */
+  margin-left: auto;
+  margin-right: auto; /* Centers the button horizontally */
+}
+
+.experience-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Testimonials Wrapper */
+.testimonials-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonials-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.slider-controls button {
+  background-color: #fff;
+  color: hsl(281, 34%, 58%); /* Purple */
+  border: navajowhite;
+  padding: 3px 8px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  width: 45px;
+  height: 45px;
+}
+
+.slider-controls button:hover {
+  background-color: #8e44ad;
+  width:fit-content; /* Darker purple */
+}

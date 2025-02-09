@@ -1,0 +1,309 @@
+/* Testimonials Container */
+.testimonials-container {
+    background-color: #121212; /* Black background */
+    color: #fff; /* White text */
+    padding: 50px 50px;
+    text-align: center;
+    border-radius: 0px;
+    position: relative;
+    
+  }
+  
+  /* Section Title */
+  .testimonials-container h2 {
+    font-size: 2.5rem;
+    color: #e3e3e3;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position:center;
+  
+  }
+  
+  /* Testimonials Slider */
+  .testimonials-slider {
+    display: flex;
+    overflow: hidden;
+    position: center;
+    transition: transform 0.5s ease;
+    justify-content: center; /* Center the initial card */
+    align-items: center;
+    padding: 50px 50px 50px 20px;
+  
+    
+  }
+  
+  /* Individual Testimonial Card */
+  .testimonial-card {
+    margin-top: 20px !important;
+    background: url('image.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire card */
+    background-position: center -28px; /* Moves image down by 20px */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 10px;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #b2bdbd97;
+    position: relative;
+}
+
+  
+  /* Profile Picture Circle */
+  .testimonial-card .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #7e119a;
+    position: absolute;
+    top:-40px; /* Position the profile pic above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+  }
+  
+  /* Active Testimonial Card */
+  .testimonial-card.active {
+    transform: scale(1.00);
+    border: 3px solid #522066; /* Purple border for active testimonial */
+  }
+  
+  /* Testimonial Text */
+  .testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Testimonial Author */
+  .testimonial-card .author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-top: 15px;
+  }
+  
+  /* Role */
+  .testimonial-card .role {
+    color: #d6ccea; /* Light purple */
+    font-size: 0.95rem;
+  }
+  
+  /* Slider Controls */
+  .slider-controls {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly !important;
+    width: 3900px;
+    padding: 5 5px;
+    min-height: min-content;
+    max-height: max-content;
+  }
+  
+  .slider-controls button {
+    background-color: #fff;
+    color: hsl(281, 34%, 58%); /* Purple */
+    border: navajowhite;
+    padding: 3px 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .slider-controls button:hover {
+    background-color: #8e44ad;
+    color: #fff;
+    /* width:fit-content; Darker purple */
+  }
+  
+  /* Dots Navigation */
+  .dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dots .dot {
+    width:10px;
+    height: 10px;
+    background-color: #e8e1ea; /* Light purple */
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dots .dot.active {
+    background-color: #7c4398; /* Darker purple */
+  }
+  
+  /* Hover effect for dots */
+  .dots .dot:hover {
+    background-color: #8e44ad;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 798px) {
+    .testimonials-container {
+      padding: 30px 10px;
+    }
+  
+    .testimonials-slider {
+      flex-direction: column;
+    }
+  
+    .testimonial-card {
+      margin: 10px 0;
+      min-width: 250px;
+      max-width: 200%;
+    }
+  
+    .slider-controls button {
+      padding: 100px 100px;
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Header Row with Filter */
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown Filter */
+  .dropdown-filter {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .dropdown-filter:focus {
+    border-color: #8e44ad; /* Match the theme's purple color */
+    outline: none;
+  }
+  
+  .dropdown-filter:hover {
+    border-color: #7c4398;
+    cursor: pointer;
+  }
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .header-row h2 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .header-row .dropdown-filter {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #121212;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    padding: 8px 16px; /* Adjust padding for a wider look */
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    width: 160px; /* Makes it wider */
+    margin-bottom: 40px;
+  }
+  .testimonials-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: #555;
+  }
+  .testimonials-container h2{
+    margin-bottom: 40px;
+    margin-top: 23px;
+  }
+  .header-row .dropdown-filter option {
+    background-color: #121212;
+    color: #ffffff;}
+  
+    .testimonials-slider {
+      display: flex;
+      justify-content: center; /* Centers the visible cards */
+      position: relative;
+      overflow: hidden;
+  }
+  /* Active Testimonial Card */
+.testimonial-card.active {
+    transform: scale(1.1); /* Increase the size to 110% */
+    border: 3px solid #522066; /* Purple border for active testimonial */
+}
+/* Invisible Button Style */
+.slider-controls button.invisible {
+  visibility: hidden; /* Hides the button while keeping the space occupied */
+}
+/* Invisible Button Style */
+.slider-controls button.invisible {
+  visibility: hidden; /* Hides the button while keeping the space occupied */
+}
+html, body {
+  overflow-x: hidden;
+}

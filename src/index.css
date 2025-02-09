@@ -1,0 +1,7 @@
+/* src/styles/index.css */
+
+/* Add any global styles specific to the root element here */
+body {
+    font-family: sans-serif; /* Global font styling */ 
+    background: linear-gradient(135deg, #141414 60%, #52057b 100%);
+  }

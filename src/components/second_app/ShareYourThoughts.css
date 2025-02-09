@@ -1,0 +1,282 @@
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+  color: rgb(250, 242, 242);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* Profile Picture Styles */
+.profile-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+}
+
+.profile-picture-label {
+  cursor: pointer;
+}
+
+.profile-picture-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(235, 229, 229, 0.575);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid rgb(142, 61, 190);
+}
+
+.upload-placeholder {
+  color: rgb(194, 184, 184);
+  font-size: 12px;
+  text-align: center;
+}
+
+.uploaded-profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Input Fields */
+.input-section {
+  margin-bottom: 20px;
+  
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field input{
+  background-color: transparent;
+  border: 1px solid rgb(234, 235, 236) !important; /* Creates a solid border */
+  border-radius:5px;
+  
+
+}
+.input-field select
+
+textarea {
+  padding: 10px;
+  border: 2px;
+  border-color: black;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+textarea {
+  width: 96.5%;
+  height: 100px;
+ background-color: transparent;
+ border:black;
+}
+
+button {
+  background-color: #6a0dad;
+  border: black;
+  color: rgb(57, 29, 29);
+  padding: 15px 45px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: -89px;
+  
+}
+
+button:hover {
+  background-color: #9a32cd;
+}
+/* ShareYourThoughts.css */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0px auto;
+ 
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 300; 
+}
+
+.form-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+ 
+}
+
+.profile-section {
+  text-align: center;
+  flex: 1;
+ 
+}
+
+.profile-picture-circle {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #4f4f4f, #1a1a1a);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+
+.upload-placeholder {
+  color: #cec4c4;
+}
+
+.uploaded-profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.input-section, .form-fields {
+  flex: 2;
+  
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+ 
+}
+
+.input-field, .form-group {
+  flex: 1;
+  margin-bottom: 15px;
+ 
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+ 
+  padding: 10px;
+  border: 1px solid rgb(224, 227, 231) !important; /* Creates a solid border */
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #483d8b, #6a5acd);
+}
+.myfield{
+  max-width: 250px;
+}
+/* For flex layout */
+.profile-section-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* For centered layout */
+.profile-section-centered {
+  text-align: center;
+  flex: 1;
+  background-color: transparent;
+}
+.profile-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  margin-left: -30px;
+  margin-right: 30px;
+}
+
+.profile-picture-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Optional background color */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.upload-placeholder {
+  font-size: 14px;
+  color: #888; /* Placeholder text color */
+}
+
+.upload-text {
+  font-size: 16px;
+  margin: 0;
+}
+select{
+  width: 100%
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #6a5acd, #483d8b);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.form-fields{
+  margin-bottom: 23px;
+  background-color: transparent;
+}
+

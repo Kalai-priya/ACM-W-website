@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #121212!important;
+}
+
+.logo-container .logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  color: aliceblue;
+  margin: 0; /* Ensures no extra spacing */
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.notification-icon {
+  color: #6A5ACD;
+  font-size: 30px; /* Increased font size for better visibility */
+  display: flex;
+  align-items: center; /* Aligns icon vertically */
+  justify-content: center; /* Centers the icon */
+  margin-left: 10px; /* Spacing to keep layout consistent */
+  height: 50px; /* Matches logo height */
+}
+.logo-container .logo {
+  height: 50px; /* Ensures consistent height */
+  width: 50px; /* Makes the logo a square */
+  border-radius: 50%; /* Makes the logo round */
+  object-fit: cover; /* Ensures the image fits within the circular area */
+  overflow: hidden; /* Prevents overflow of the image content */
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* Creates space between logo and nav-bell group */
+  align-items: center;
+  padding: 20px;
+  background-color: #121212
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Aligns the logo vertically */
+  margin-left:20px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover; /* Ensures proper cropping if needed */
+}
+
+.nav-bell-container {
+  display: flex;
+  align-items: center; /* Aligns navigation and bell icon vertically */
+}
+
+nav {
+  margin-right: 20px; /* Adds spacing between navigation and the bell icon */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Aligns list items vertically */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 45px; /* Adds spacing between menu items */
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.notification-icon {
+  color: #03cafc;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px; /* Rounds the corners slightly */
+}
+.transparent-header {
+  background: transparent !important;
+}
+

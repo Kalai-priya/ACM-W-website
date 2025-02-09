@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #505099; /* Purple color from the image */
+    --background-color: #181818;
+    --text-color: #2f2929;
+    --card-background-color: #222;
+    --dot-color: #585151;
+    --active-dot-color: #231d1d;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
